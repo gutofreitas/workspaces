@@ -1,0 +1,9 @@
+{
+	"name": "php56",
+	"dockerComposeFile": ["docker-compose.yml"],
+
+	"service": "php56",
+	"workspaceFolder": "/var/www/html",
+	"shutdownAction": "stopCompose"
+
+}
