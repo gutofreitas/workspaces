@@ -3,9 +3,9 @@ services:
   siag:
     build:
       context: .
-      dockerfile: Dockerfile
-    expose:
-      - "80"
+      dockerfile: docker/Dockerfile
+    ports:
+      - 8081:80
     volumes:
       - type: bind
         source: .

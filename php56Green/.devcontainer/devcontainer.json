@@ -1,9 +1,8 @@
 {
-	"name": "php56",
-	"dockerComposeFile": ["docker-compose.yml"],
+	"name": "siag",
+	"dockerComposeFile": ["../docker-compose.yml"],
 
-	"service": "php56",
+	"service": "siag",
 	"workspaceFolder": "/var/www/html",
 	"shutdownAction": "stopCompose"
-
 }
