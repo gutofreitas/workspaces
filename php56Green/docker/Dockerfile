@@ -3,4 +3,5 @@ RUN yum install epel-release -y && rpm -Uvh https://mirror.webtatic.com/yum/el7/
 COPY docker/httpd.conf /etc/httpd/conf/httpd.conf
 COPY docker/php.ini /etc/php.ini
 ENTRYPOINT ["/usr/sbin/httpd", "-D", "FOREGROUND"]
+WORKDIR /var/www/html/
 EXPOSE 80
