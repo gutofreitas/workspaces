@@ -3,14 +3,16 @@ services:
   nodejs:
     build:
       context: ../
-      dockerfile: .devcontainer/Dockerfile-nodejs
+      dockerfile: .devcontainer/Dockerfile
     networks:
       - mongodb_default
     volumes:
       - ../:/workspace:cached
+      - /dev/bus/usb:/dev/bus/usb
     command: /bin/sh -c "while sleep 1000; do :; done"
     ports:
       - 3333:3333
+    privileged: true
 
 networks:
   mongodb_default:

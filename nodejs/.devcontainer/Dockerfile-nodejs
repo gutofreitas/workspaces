@@ -1,3 +1,0 @@
-FROM node:lts
-RUN npm i create-react-app -G
-WORKDIR /home/

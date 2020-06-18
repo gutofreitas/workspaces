@@ -1,8 +1,0 @@
-{
-	"name": "siag",
-	"dockerComposeFile": ["../docker-compose.yml"],
-
-	"service": "siag",
-	"workspaceFolder": "/var/www/html",
-	"shutdownAction": "stopCompose"
-}
