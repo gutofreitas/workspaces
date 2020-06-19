@@ -4,8 +4,6 @@ services:
     build:
       context: ../
       dockerfile: .devcontainer/Dockerfile
-    networks:
-      - mongodb_default
     volumes:
       - ../:/workspace:cached
       - /dev/bus/usb:/dev/bus/usb
@@ -13,7 +11,3 @@ services:
     ports:
       - 3333:3333
     privileged: true
-
-networks:
-  mongodb_default:
-    external: true
